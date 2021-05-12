@@ -8,10 +8,12 @@ app = Flask(__name__)
 def index():
     a={"name":"bob","date":"12月5日","time":"23:30","peopleCount":"10位","phone":"0123456789"}
 
-    Webray=[]
-    Webray.append(a)
+    Webray_in_flask=[]
+    Webray_in_flask.append(a)
 
-    return render_template('index.html',Webray=Webray)
+    hello_word_in_flask='hello hello hello'
+
+    return render_template('index.html',Webray=Webray_in_flask,hello=hello_word_in_flask)
 
 
 
