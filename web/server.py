@@ -32,6 +32,19 @@ def dashboard():
 
     return render_template('dashboard.html')    
 
+@app.route('/base',methods=[ "GET",'POST'])
+def base():
+    print('base')
+
+    return render_template('base.html')  
+
+
+@app.route('/testsuper',methods=[ "GET",'POST'])
+def testsuper():
+    print('testsuper')
+
+    return render_template('testsuper.html')  
+
 
 
 
